@@ -734,7 +734,7 @@ footer #phone {
         width: 100vw; 
         height: 100vh; 
         margin: 0; 
-        padding: 5rem 2rem 6rem; 
+        padding: 50px 20px 60px; 
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
