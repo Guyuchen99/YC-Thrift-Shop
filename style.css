@@ -305,6 +305,10 @@ section .basic-item:hover .buy-icon {
     animation: Announcement 32s linear infinite; 
 }
 
+.header .header-btm.slider p span {
+    font-weight: 500;
+}
+
 .header .header-btm.slider p:nth-of-type(1) {
     left: 0; 
 }
