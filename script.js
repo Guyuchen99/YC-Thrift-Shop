@@ -20,6 +20,20 @@ $(document).ready(function () {
   updateNavbarHeight();
   window.addEventListener("resize", updateNavbarHeight);
 
+  // Hover to Change to Back View
+  let FBImgs = document.querySelectorAll(".front-back-img");
+
+  FBImgs.forEach(function (Img) {
+    Img.addEventListener("mouseover", function () {
+      this.dataset.originalSrc = this.src;
+      this.src = this.dataset.backView;
+    });
+
+    Img.addEventListener("mouseout", function () {
+      this.src = this.dataset.originalSrc;
+    });
+  });
+
   // Shop Item Display
   let shopItems = document.querySelector(".featured .featured-items");
   shopItems.innerHTML += shopItems.innerHTML;
