@@ -10,16 +10,6 @@ $(document).ready(function () {
     $(".header .navbar-icon").removeClass("bx-x");
   });
 
-  //Update navbar height
-  function updateNavbarHeight() {
-    const navbarMenu = document.querySelector(".header .header-content");
-    const navbarHeight = navbarMenu.offsetHeight;
-    document.documentElement.style.setProperty("--navbar-height", `${navbarHeight}px`);
-  }
-
-  updateNavbarHeight();
-  window.addEventListener("resize", updateNavbarHeight);
-
   // Hover to Change to Back View
   let FBImgs = document.querySelectorAll(".front-back-img");
 
@@ -33,6 +23,16 @@ $(document).ready(function () {
       this.src = this.dataset.originalSrc;
     });
   });
+
+  //Update navbar height
+  function updateNavbarHeight() {
+    const navbarMenu = document.querySelector(".header .header-content");
+    const navbarHeight = navbarMenu.offsetHeight;
+    document.documentElement.style.setProperty("--navbar-height", `${navbarHeight}px`);
+  }
+
+  updateNavbarHeight();
+  window.addEventListener("resize", updateNavbarHeight);
 
   // Shop Item Display
   let shopItems = document.querySelector(".featured .featured-items");
