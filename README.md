@@ -1,2 +1,2 @@
 # YC Thrift Shop
-![Photo of My Thrift Shop Website](images/YCThrift.png)
+![Photo of My Thrift Shop Website](images/YCThriftShop.png)
